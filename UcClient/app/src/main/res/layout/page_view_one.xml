@@ -8,8 +8,9 @@
     >
 
     <LinearLayout
+        android:layout_marginTop="@dimen/title_view_height"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="@dimen/website_view_height"
         android:background="#FF0000"
         app:layout_behavior = "@string/website_behavior"
         >
@@ -19,7 +20,9 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="340dp"
+        android:layout_height="wrap_content"
+        >
 
     </android.support.v7.widget.RecyclerView>
 

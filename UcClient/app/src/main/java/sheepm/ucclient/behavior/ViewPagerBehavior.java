@@ -23,8 +23,14 @@ public class ViewPagerBehavior extends CoordinatorLayout.Behavior<View> {
     }
 
     @Override
+    public boolean onDependentViewChanged(CoordinatorLayout parent, View child, View dependency) {
+        Log.e(TAG,"" + dependency.getTranslationY());
+        child.setTranslationY(dependency.getTranslationY());
+        return super.onDependentViewChanged(parent, child, dependency);
+    }
+
+    @Override
     public boolean layoutDependsOn(CoordinatorLayout parent, View child, View dependency) {
-        Log.e(TAG,"depen" + isDepend(dependency));
         return isDepend(dependency);
     }
 

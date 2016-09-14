@@ -18,7 +18,7 @@
     <LinearLayout
         android:id="@+id/title_view"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/title_view_height"
         android:background="#1F6498"
         android:orientation="horizontal"
         app:layout_behavior = "@string/title_behavior"

@@ -3,4 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="title_view_height">200dp</dimen>
+    <dimen name="website_view_height">140dp</dimen>
 </resources>

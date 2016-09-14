@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         mVpMain.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                Log.e(TAG,"position : " + position + "positionOffset : " + positionOffset + "positionOffsetPixels : " + positionOffsetPixels);
                 if (position == 0 && positionOffset != 0.0){
                     CoordinatorLayout.LayoutParams lp = (CoordinatorLayout.LayoutParams) mLlTitle.getLayoutParams();
                     lp.topMargin = (int) (- (height - 150) * positionOffset);
