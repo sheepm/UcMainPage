@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">UcClient</string>
+
+    <string name="title_behavior">sheepm.ucclient.behavior.TitleBehavior</string>
+    <string name="website_behavior">sheepm.ucclient.behavior.WebsiteBehavior</string>
+    <string name="viewpager_behavior">sheepm.ucclient.behavior.ViewPagerBehavior</string>
 </resources>

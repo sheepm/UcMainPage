@@ -1,6 +1,7 @@
 package sheepm.ucclient;
 
 import android.animation.ObjectAnimator;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 Log.e(TAG,"position : " + position + "positionOffset : " + positionOffset + "positionOffsetPixels : " + positionOffsetPixels);
                 if (position == 0 && positionOffset != 0.0){
-                    RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams) mLlTitle.getLayoutParams();
+                    CoordinatorLayout.LayoutParams lp = (CoordinatorLayout.LayoutParams) mLlTitle.getLayoutParams();
                     lp.topMargin = (int) (- (height - 150) * positionOffset);
                     mLlTitle.setLayoutParams(lp);
 //                    ObjectAnimator.ofFloat(mLlTitle,"translateY",height,height -  (height - 150 ) * positionOffset ).start();
